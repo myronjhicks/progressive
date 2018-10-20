@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "progressivechicago-94ed9"
+  },
+  "targets": {
+    "progressivechicago-94ed9": {
+      "hosting": {
+        "frontend": [
+          "progressivechicago-94ed9"
+        ]
+      }
+    }
+  }
+}
