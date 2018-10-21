@@ -12,7 +12,7 @@
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li>
+                            <li><i @click="setLayout('admin-layout')" class="fas fa-sign-in-alt" style="color: #a5afbb"></i></li>
                         </ul>
                      </div>
                 </div>
@@ -22,7 +22,11 @@
 </template>
 <script>
 export default {
-    
+    methods: {
+        setLayout(layout) {
+            this.$store.commit('TOGGLE_MODAL')
+        }
+    }
 }
 </script>
 
